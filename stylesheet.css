@@ -47,7 +47,7 @@ p {
 
 }
 
-input{
+input {
     margin: 1rem 0rem 1rem 0rem;
     padding: 0.8rem;
     border-radius: 0.5rem;
@@ -67,7 +67,7 @@ button {
 }
 
 
-
+/* Success state */
 
 .success {
     background-color: blueviolet;
