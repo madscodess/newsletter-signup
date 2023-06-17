@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+   
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(234, 29%, 20%);
+
+}
+
+h1 {
+    
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+}
+
+.container-sign-up{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    width: 60rem;
+    height: 40rem;
+    padding: 2em;
+    border-radius: 3em;
+}
+
+
+
+
+.sign-up-form {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30rem;
+}
+
+.sign-up-form > p > img {
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+
+}
+
+input{
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border-color: hsl(231, 7%, 60%);
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 7%, 60%)
+}
+
+
+button {
+    margin: 1rem 0rem 1rem 0rem;
+    font-size: 16px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+
+
+
+.success {
+    background-color: blueviolet;
+    visibility: hidden;
+}
+
+ .attribution { font-size: 11px; text-align: center; 
+    .attribution a { color: hsl(228, 45%, 44%); 
