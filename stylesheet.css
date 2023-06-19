@@ -1,21 +1,24 @@
 body {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     flex-direction: column;
     /* justify-content: center; */
-   
     background-color: hsl(235, 18%, 26%);
     color: hsl(234, 29%, 20%);
-
 }
 
 h1 {
-    
+    font-size: 40px;
     font-weight: 700;
 }
 
 p {
-    font-size: 16px;
+    font-size: 16px; 
+}
+
+p > img {
+    padding-right: 0.4rem;
 }
 
 .container-sign-up{
@@ -30,15 +33,14 @@ p {
     border-radius: 3em;
 }
 
-
-
-
 .sign-up-form {
     font-size: 16px;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 30rem;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2.5rem;
 }
 
 .sign-up-form > p > img {
@@ -47,18 +49,29 @@ p {
 
 }
 
-input {
-    margin: 1rem 0rem 1rem 0rem;
-    padding: 0.8rem;
+form {
+    display: flex;
+    padding-top: 1.5rem;
+    flex-direction: column;
+    width: 27rem;
+    font-weight: 700;
     border-radius: 0.5rem;
     border-color: hsl(231, 7%, 60%);
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(231, 7%, 60%)
+    color: hsl(234, 29%, 20%) ;
 }
 
 
-button {
-    margin: 1rem 0rem 1rem 0rem;
+input {
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+    border-color: hsl(231, 7%, 60%);
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 7%, 60%);
+}
+
+
+form > button {
+    margin: 1.5rem 0rem 1rem 0rem;
     font-size: 16px;
     background-color: hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
