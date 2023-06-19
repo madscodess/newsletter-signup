@@ -3,7 +3,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: center; */
     background-color: hsl(235, 18%, 26%);
     color: hsl(234, 29%, 20%);
 }
@@ -21,7 +20,8 @@ p > img {
     padding-right: 0.4rem;
 }
 
-.container-sign-up{
+.container-sign-up {
+    margin-top: 5rem;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -38,15 +38,15 @@ p > img {
     flex-direction: column;
     justify-content: space-between;
     width: 30rem;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
     padding-left: 2rem;
     padding-right: 2.5rem;
 }
 
-.sign-up-form > p > img {
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-
+.main-image > img {
+    padding-left: 2rem;
+    width: 28rem;
+    height: 40rem;
 }
 
 form {
@@ -85,7 +85,18 @@ form > button {
 .success {
     background-color: blueviolet;
     visibility: hidden;
+    display: none;
 }
 
- .attribution { font-size: 11px; text-align: center; 
-    .attribution a { color: hsl(228, 45%, 44%); 
+ .attribution { 
+    margin: 2rem;
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(0, 0%, 100%); 
+ }
+
+ .attribution a { 
+    text-decoration: none;
+    color: hsl(0, 0%, 100%); 
+ }
+        
