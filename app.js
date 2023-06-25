@@ -1,11 +1,10 @@
 
 
 
-let subscribe = document.getElementById("submit-form");
-let email = document.getElementById('email');
+let subscribe = document.getElementById('submit-form');
 let success = document.getElementById('success');
 let newsletter = document.getElementById('container-sign-up');
-let dismiss = document.getElementById("submit-form");
+let dismiss = document.getElementById("dismiss-button");
 
 //when subscribe button clicked, display thank you message
 subscribe.addEventListener("submit" , function(e) {
@@ -17,7 +16,7 @@ subscribe.addEventListener("submit" , function(e) {
 });
 
 //when dismiss button clicked, reload / display home page
-success.addEventListener("click", function(e){
+dismiss.addEventListener("click", function(e){
     console.log("dismiss");
     success.style.visibility = "hidden";
     success.style.display = "none";
