@@ -1,1 +1,27 @@
-console.log("hiya")
+
+
+
+let subscribe = document.getElementById("submit-form");
+let email = document.getElementById('email');
+let success = document.getElementById('success');
+let newsletter = document.getElementById('container-sign-up');
+let dismiss = document.getElementById("submit-form");
+
+//when subscribe button clicked, display thank you message
+subscribe.addEventListener("submit" , function(e) {
+    success.style.visibility = "visible";
+    success.style.display = "block";
+    newsletter.style.visibility = "hidden";
+    newsletter.style.display = "none";
+    e.preventDefault();
+});
+
+//when dismiss button clicked, reload / display home page
+success.addEventListener("click", function(e){
+    console.log("dismiss");
+    success.style.visibility = "hidden";
+    success.style.display = "none";
+    newsletter.style.visibility = "visible";
+    newsletter.style.display = "flex";
+    e.preventDefault();
+})

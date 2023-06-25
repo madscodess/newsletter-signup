@@ -12,15 +12,15 @@ h1 {
     font-weight: 700;
 }
 
-p {
+#container-sign-up > p {
     font-size: 16px; 
 }
 
-p > img {
+#container-sign-up > p > img {
     padding-right: 0.4rem;
 }
 
-.container-sign-up {
+#container-sign-up {
     margin-top: 5rem;
     font-size: 16px;
     display: flex;
@@ -82,11 +82,46 @@ form > button {
 
 /* Success state */
 
-.success {
-    background-color: blueviolet;
+#success {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    width: 25rem;
+    height: 25rem;
+    background-color: whitesmoke;
+    padding: 2em;
+    margin-top: 4rem;
+    border-radius: 3em;
     visibility: hidden;
     display: none;
 }
+
+#success > p {
+    margin-left: 1.3rem;
+    margin-right: 1rem;
+    line-height: 1.8rem;
+}
+
+#success > h1 {
+    margin-left: 1.2rem;
+}
+
+#success > img {
+    width: 4rem;
+    height: 3rem;
+    margin-left: 1rem;
+
+}
+
+#success > button {
+    margin: 1.5rem 0rem 1rem 1.5rem;
+    font-size: 16px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    width: 22rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+ }
 
  .attribution { 
     margin: 2rem;
