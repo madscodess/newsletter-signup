@@ -21,7 +21,7 @@ h1 {
 }
 
 #container-sign-up {
-    margin-top: 5rem;
+    margin-top: 1rem;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -79,6 +79,11 @@ form > button {
     border-radius: 0.5rem;
 }
 
+/* input:invalid:not(:focus):not(:placeholder-shown){
+    background-color: hsl(7, 100%, 95%);
+    border: 1px solid #FF673E;
+    color: #FF673E;
+} */
 
 /* Success state */
 

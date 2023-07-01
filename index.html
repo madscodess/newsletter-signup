@@ -31,10 +31,14 @@
 
   <form id="submit-form">
     <label for="email">Email Address</label><br>
-    <input type="email" id="email" name="email"
-  placeholder="email@company.com"> 
+    <!-- <input type="text" id="email-input" name="email" -->
+  <!-- placeholder="email@company.com" />  -->
+  <label for="email">Email</label>
+  <input type="text" id="email" placeholder="Enter email" />
+  <small>Error Message</small>
   <button type="submit" >Subscribe to monthly newsletter</button> 
   </form>
+
 
  <!-- Sign-up form end -->
   </div>
@@ -48,7 +52,7 @@
   <img src="/assets/images/icon-list.svg" alt="tick picture">
  <h1> Thanks for subscribing!</h1>
 
-<p> A confirmation email has been sent to ash@loremcompany.com. 
+<p> A confirmation email has been sent to <p id="email-update"> </p> ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.</p>
 
 <button id="dismiss-button" type="submit">  Dismiss message </button>
