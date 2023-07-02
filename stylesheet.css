@@ -1,6 +1,3 @@
-
-
-
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -22,7 +19,7 @@ h1 {
 #container-sign-up > p > img {
     padding-right: 0.4rem;
 }
-
+/* Container holds all elements */
 #container-sign-up {
     margin-top: 1rem;
     font-size: 16px;
@@ -36,6 +33,7 @@ h1 {
     border-radius: 3em;
 }
 
+/* Form - left side */
 .sign-up-form {
     font-size: 16px;
     flex-direction: column;
@@ -46,18 +44,22 @@ h1 {
     padding-right: 2.5rem;
 }
 
+/* Image - right side */
 .main-image > img {
     max-width: 100%;
   display: block;
 }
 
+/* Mobile Image hidden */
 .mobile-image > img {
     display: none;
     visibility: hidden;
 }
 
+/* input & sign up text*/
 form {
     display: flex;
+    justify-content: space-between;
     padding-top: 1.5rem;
     flex-direction: column;
     width: 27rem;
@@ -76,6 +78,19 @@ input {
     color: hsl(231, 7%, 60%);
 }
 
+div #input-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+/* Invalid Email */
+p#error {
+    color: hsl(4, 100%, 67%);
+    visibility: hidden;
+    display: none;
+}
 
 form > button {
     margin: 1.5rem 0rem 1rem 0rem;
@@ -85,12 +100,6 @@ form > button {
     padding: 0.8rem;
     border-radius: 0.5rem;
 }
-
-/* input:invalid:not(:focus):not(:placeholder-shown){
-    background-color: hsl(7, 100%, 95%);
-    border: 1px solid #FF673E;
-    color: #FF673E;
-} */
 
 /* Success state */
 
@@ -135,6 +144,7 @@ form > button {
     border-radius: 0.5rem;
  }
 
+ /* Footer */
  .attribution { 
     margin: 2rem;
     font-size: 11px; 
@@ -147,14 +157,11 @@ form > button {
     color: hsl(0, 0%, 100%); 
  }
         
-
-
 /*Mobile Layout*/
-/*@media(max-width: 641px){*/
     @media(max-width: 854px){
 
     body {
-        background-color: whitesmoke;
+        background-color: white;
         display: flex;
         flex-wrap: wrap; 
         margin: 0;
@@ -162,12 +169,13 @@ form > button {
    
     #container-sign-up { 
         display: flex;
+        background-color: white;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         width: 35rem;
         height: 65rem;
-        padding: 0;
+        padding: 0; 
         margin: 0;
     }
 
@@ -192,6 +200,13 @@ form > button {
     margin: 0;
 }
 
+#success {
+    background-color: white;
+    visibility: hidden;
+    display: none;
+}
+
+/* Footer */
     .attribution { 
         color: black; 
      }
@@ -200,3 +215,4 @@ form > button {
         color: black; 
      }
 }
+    

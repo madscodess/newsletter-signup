@@ -30,16 +30,15 @@
 <p> <img src="/assets/images/icon-list.svg" alt="tick picture"> And much more!</p>
 </div>
 
-  <form id="submit-form">
-    <label for="email">Email Address</label><br>
-    <!-- <input type="text" id="email-input" name="email" -->
-  <!-- placeholder="email@company.com" />  -->
-  <label for="email">Email</label>
-  <small>Error Message</small>
-  <input type="text" id="email" placeholder="Enter email" />
+  
+<form id="submit-form">
+<div id="input-text">  <label for="email">Email Address</label>
+  <p id="error">Error Message</p>
+</div>
+  <input type="email" id="emailField" name="email" placeholder="email@company.com" /> 
 
-  <button type="submit" >Subscribe to monthly newsletter</button> 
-  </form>
+  <button id="submit-button" type="button" >Subscribe to monthly newsletter</button> 
+</form>
   </div>
 
   <div class="main-image"> 
@@ -59,12 +58,12 @@
   <img src="/assets/images/icon-list.svg" alt="tick picture">
  <h1> Thanks for subscribing!</h1>
 
-<p> A confirmation email has been sent to <p id="email-update"> </p> ash@loremcompany.com. 
+<p> A confirmation email has been sent to <span id="email-update"> </span>. 
   Please open it and click the button inside to confirm your subscription.</p>
 
 <button id="dismiss-button" type="submit">  Dismiss message </button>
-  <!-- Success message end -->
 </div>
+  <!-- Success message end -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

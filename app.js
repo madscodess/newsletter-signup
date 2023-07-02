@@ -1,63 +1,46 @@
-
-
-
-let subscribe = document.getElementById('submit-form');
+let form = document.getElementById('submit-form');
+let subscribeButton = document.getElementById('submit-button');
 let success = document.getElementById('success');
 let newsletter = document.getElementById('container-sign-up');
 let dismiss = document.getElementById("dismiss-button");
-//let emailField = document.getElementById('email-input');
-const
-const input = document.querySelector("input");
+const emailField = document.getElementById("emailField");
+let errorMessage = document.getElementById("error");
 
-// //for email input to be added to text
-// const emailInput = document.getElementById("email-input").value;
-// console.log(emailInput);
-// console.log(emailInput);
+//validate email using regular expression
+function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
 
-// function checkEmail(input) {
-//     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     if (re.test(input.value.trim())) {
-//       submitEmail();
-//     } else {
-//         console.log("ERROR");
-//       //showError(input, 'Enail is not valid');
-//     }
-//   }
-
-// input.addEventListener("keyup", function (){
-//     let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-//     if(input.value.match(pattern)){
-//         console.log("working hun");
-//         return submitEmail();
-//     }
-//     if(input.value === ""){
-//      return console.log("input is empty");
-//     }
-//     else if(input.value !== (pattern)){
-//         return console.log("not valid email");
-//     }
-//   })
-  
-//when subscribe button clicked, display thank you message
-// function submitEmail(){
-subscribe.addEventListener("submit" , function(e) {
-    
+//when button clicked, display thank you message if email is validated        
+//event listener for the button 
+subscribeButton.addEventListener("click" , function(e) {
+    //takes user input
+    const email = emailField.value;
+if (validateEmail(email)) {
     success.style.visibility = "visible";
     success.style.display = "block";
     newsletter.style.visibility = "hidden";
     newsletter.style.display = "none";
     e.preventDefault();
-
+    //event listener for the form input element
+form.addEventListener("click" , function(e) {
+    document.getElementById("email-update").innerHTML = this.email.value;
+e.preventDefault();
 });
-// }
+}
+//else give user error message & make input box red, show valid email required message
+else {
+    document.getElementById("error").innerHTML = "Valid Email Required";
+    errorMessage.style.visibility = "visible";
+    errorMessage.style.display = "flex";
+    emailField.style.color = "hsl(4, 100%, 67%)";
+    emailField.style.backgroundColor = "rgb(255 98 87 / 48%)";
+}
+});
 
-//when dismiss button clicked, reload / display home page
+//when dismiss button clicked, reload home page & takes out any email inputs
 dismiss.addEventListener("click", function(e){
-    console.log("dismiss");
-    success.style.visibility = "hidden";
-    success.style.display = "none";
-    newsletter.style.visibility = "visible";
-    newsletter.style.display = "flex";
+    window.location.href=window.location.href;
     e.preventDefault();
-})
-
+});
