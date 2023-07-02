@@ -56,9 +56,10 @@ Form validation and regular expression
 Referencing a user input so that it can be used on another page
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-<h1>Some JS code I'm proud of</h1>
-```
-```/when button clicked, display thank you message if email is validated        
+Some javascript i'm proud of:
+
+```js
+//when button clicked, display thank you message if email is validated        
 //event listener for the button 
 subscribeButton.addEventListener("click" , function(e) {
     //takes user input
@@ -74,11 +75,15 @@ form.addEventListener("click" , function(e) {
     document.getElementById("email-update").innerHTML = this.email.value;
 e.preventDefault();
 });
-} ```
+}
+```
 
 ### Continued development
 
-I would like to learn form validation with a database using emails, passwords etc.
+This project has made me look into form validation and I would like to learn & test form validation with a database using emails, passwords etc.
+
+### Future development
+- Add tablet mode
 
 ## Author
-- Instagram - [@yourusername](https://www.instagram.com/madscodes)
+- Instagram - [@madscodes](https://www.instagram.com/madscodes)
