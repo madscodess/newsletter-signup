@@ -1,11 +1,9 @@
 # Frontend Mentor - Newsletter sign-up form with success message solution
-
 This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 [Solution Link](https://madscodess.github.io/newsletter-signup/)
 
 ## The Challenge
-
 The challenge was to build out a newsletter form and get it looking as close to the design provided as possible.
 
 Users are able to:
@@ -15,7 +13,8 @@ Users are able to:
   - The field is left empty
   - The email address is not formatted correctly
 - View the optimal layout for the interface depending on their device's screen size (future improvements to this below)
-- See hover and focus states for all interactive elements on the page### Screenshot
+- See hover and focus states for all interactive elements on the page
+
 ## My process
 Used the <input> element to create email field.
 
@@ -29,7 +28,6 @@ If email was valid: redirected the user to a thank you page which included:
 - The email address they inputted
 - "Dismiss" button that takes the user back to the sign-up page.
 ### Built with
-
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
@@ -39,7 +37,7 @@ If email was valid: redirected the user to a thank you page which included:
 - Form validation and regular expression
 - Referencing a user input so that it can be used on another page
 
-Some javascript i'm proud of:
+Snipped of Javascript I'm proud of:
 
 ```js
 //when button clicked, display thank you message if email is validated        
@@ -62,7 +60,6 @@ e.preventDefault();
 ```
 
 ### Continued development
-
 This project has made me look into form validation and I would like to learn & test form validation with a database using emails, passwords etc.
 
 ### Future development
