@@ -101,6 +101,11 @@ form > button {
     border-radius: 0.5rem;
 }
 
+/* hover submit button */
+button#submit-button:hover {
+    background-color:  hsla(4, 89%, 66%, 0.985);
+}
+
 /* Success state */
 
 #success {
@@ -156,7 +161,11 @@ form > button {
     text-decoration: none;
     color: hsl(0, 0%, 100%); 
  }
-        
+    
+ 
+
+
+
 /*Mobile Layout*/
     @media(max-width: 854px){
 
@@ -173,9 +182,7 @@ form > button {
         background-color: white;
         flex-direction: column-reverse;
         align-items: center;
-        /* width: 35rem; */
         width: 20rem;
-        /* height: 65rem; */
         height: auto;
         padding: 0; 
         margin: 0;
@@ -186,11 +193,12 @@ form > button {
     padding: 0rem;
     margin: 0rem;
 }
+
 form {
     width: 20rem;
 }
 
-
+/* hide desktop image */
 .main-image > img {
     padding: 0;
     display: none;
@@ -217,17 +225,20 @@ form {
 
 #success > button {
     width: 20rem;
-    padding: 0.5rem 0;
-    margin: 0;
+    padding: 1rem 0;
+    margin: 13rem 0 0 0;
 }
 
 /* Footer */
     .attribution { 
         color: black; 
+        margin: 14rem 0 0 0;
+        font-size: 11px; 
+        text-align: center; 
      }
     
      .attribution a { 
         color: black; 
+        text-decoration: none;
      }
-
     }
