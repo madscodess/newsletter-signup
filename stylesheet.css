@@ -221,13 +221,20 @@ form {
     visibility: hidden;
     display: none;
     padding: 0.5rem 0;
-    margin: 8rem 0 0 0 ;
+    margin: 8rem 0 9rem 0 ;
 }
 
 #success > button {
     width: 20rem;
     padding: 1rem 0;
-    margin: 13rem 0 0 0;
+    margin: 10rem 0 0 0;
 }
 
-}
+/* Footer */
+ .attribution { 
+        color: black; 
+     }
+     .attribution a { 
+        color: black; 
+     } 
+} 
