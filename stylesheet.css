@@ -230,16 +230,4 @@ form {
     margin: 13rem 0 0 0;
 }
 
-/* Footer */
-    .attribution { 
-        color: black; 
-        margin: 14rem 0 0 0;
-        font-size: 11px; 
-        text-align: center; 
-     }
-    
-     .attribution a { 
-        color: black; 
-        text-decoration: none;
-     }
-    }
+}
