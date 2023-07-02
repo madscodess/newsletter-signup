@@ -36,10 +36,8 @@ If email was valid: redirected the user to a thank you page which included:
 - Mobile-first workflow
 
 ### What I learned
-
-Form validation and regular expression
-Referencing a user input so that it can be used on another page
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- Form validation and regular expression
+- Referencing a user input so that it can be used on another page
 
 Some javascript i'm proud of:
 
