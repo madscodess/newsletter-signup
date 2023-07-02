@@ -173,17 +173,23 @@ form > button {
         background-color: white;
         flex-direction: column-reverse;
         align-items: center;
-        width: 35rem;
-        height: 65rem;
+        /* width: 35rem; */
+        width: 20rem;
+        /* height: 65rem; */
+        height: auto;
         padding: 0; 
         margin: 0;
     }
 
 .sign-up-form {
-    width: auto;
-    padding: 0;
-    margin: 0;
+    width: 20rem;
+    padding: 0rem;
+    margin: 0rem;
 }
+form {
+    width: 20rem;
+}
+
 
 .main-image > img {
     padding: 0;
@@ -195,15 +201,24 @@ form > button {
     display: flex;
     visibility: visible;
     object-fit: cover;
-    width: 650px;
+    width: 350px;
     padding: 0;
     margin: 0;
 }
 
 #success {
+    width: 20rem;
     background-color: white;
     visibility: hidden;
     display: none;
+    padding: 0.5rem 0;
+    margin: 8rem 0 0 0 ;
+}
+
+#success > button {
+    width: 20rem;
+    padding: 0.5rem 0;
+    margin: 0;
 }
 
 /* Footer */
@@ -214,5 +229,5 @@ form > button {
      .attribution a { 
         color: black; 
      }
-}
-    
+
+    }
