@@ -163,8 +163,9 @@ form > button {
     body {
         background-color: white;
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         margin: 0;
+        padding: 0;
 }
    
     #container-sign-up { 
@@ -172,7 +173,6 @@ form > button {
         background-color: white;
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: center;
         width: 35rem;
         height: 65rem;
         padding: 0; 
